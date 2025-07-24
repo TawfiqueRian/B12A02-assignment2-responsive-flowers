@@ -81,7 +81,7 @@ header{
     /* margin-top: 0px; */
 }
 
-.banner-des{
+.banner-des, .plants-des{
     font-size: 1.375rem;
     font-weight: 400;
 }
@@ -94,6 +94,79 @@ header{
     gap: 50px;
 }
 
+/* main styles */
+
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+main > section{
+    margin-top: 120px;
+}
+
+/* our-plants section styles */
+
+.plants-title{
+    font-size: 3.125rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.plants-des{
+    text-align: center;
+}
+
+.plants-header{
+    max-width: 888px;
+    margin: 0 auto;
+}
+
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+
+.name{
+    text-align: center;
+    color: rgba(17, 17, 17, 1);
+    font-size: 1.375rem;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.value{
+    text-align: center;
+    color: rgba(17, 17, 17, 1);
+    font-size: 1.375rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn-primary{
+    background-color: rgba(233, 90, 8, 1);
+    width: 100%;
+    color: white;
+    font-size: 1rem;
+    padding: 19px 60px;
+    border: none;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.cards{
+    transition: background-color 0.5s;
+}
+
+.cards:hover{
+    background-color: rgb(216, 216, 220);
+}
+
+.btn-primary:hover{
+    background-color: yellow;
+    color: black;
+}
 
 
 /* media query for small devices */
@@ -111,5 +184,20 @@ header{
     }
     .banner-title{
         margin-top: 0px;
+    }
+
+    /* our-plants section      */
+
+    .cards-container{
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+    .card-img{
+        width: 100%;
+    }
+
+    .btn-primary{
+        padding: 19px 30px ;
     }
 }
