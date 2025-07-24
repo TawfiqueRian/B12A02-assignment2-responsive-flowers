@@ -1,0 +1,115 @@
+.noto-serif{
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.inter{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body{
+    background-color: rgba(245, 248, 255, 1);
+}
+
+
+/* shared data  */
+
+.orange{
+    color: rgba(233, 90, 8, 1);
+}
+
+.black{
+    color: black;
+}
+
+.light-gray{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* header related styles */
+
+header{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lists ul{
+    display: flex;
+    gap: 48px;
+}
+
+.lists ul li{
+    list-style: none;
+}
+
+.lists ul li a{
+    text-decoration: none;
+}
+
+#home{
+    color: rgba(37, 36, 50, 1);
+    font-weight: bold;
+    font-size: 1rem;
+}
+#cart{
+    color: black;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.others{
+    color: rgba(137, 135, 161, 1);
+    font-weight: 400px;
+    font-size: 1rem;
+}
+
+.banner-title{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 0px;
+    /* margin-top: 0px; */
+}
+
+.banner-des{
+    font-size: 1.375rem;
+    font-weight: 400;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 120px;
+    gap: 50px;
+}
+
+
+
+/* media query for small devices */
+
+@media screen and (max-width: 576px){
+    .navbar ul li > #home, .others{
+        display: none;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        margin-top: 28px;
+    }
+    .banner-img img{
+        width: 100%;
+    }
+    .banner-title{
+        margin-top: 0px;
+    }
+}
