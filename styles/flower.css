@@ -168,6 +168,48 @@ main > section{
     color: black;
 }
 
+/* flower lover section styles */
+
+.badge{
+    max-width: 246px;
+    max-height: 246px;
+    position: absolute;
+    top: auto;
+    margin-left: -160px;
+    margin-top: -110px;
+}
+
+.flower-lover{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.flower-lover-header{
+    max-width: 540px;
+}
+
+.fl-title{
+    font-size: 3.125rem;
+    font-weight: bold;
+}
+
+.flower-lover-header ul li{
+    font-size: 1.375rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+/* latest-deal section styles */
+
+.deals-header{
+    max-width: 888px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
 
 /* media query for small devices */
 
@@ -199,5 +241,19 @@ main > section{
 
     .btn-primary{
         padding: 19px 30px ;
+    }
+
+    /* flower-lover section styles */
+
+    .flower-lover{
+        flex-direction: column;
+    }
+    
+    .fl-store{
+        width: 100%;
+    }
+
+    .badge{
+        display: none;
     }
 }
