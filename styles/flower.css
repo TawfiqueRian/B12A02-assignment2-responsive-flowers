@@ -183,6 +183,17 @@ main > section{
     top: auto;
     margin-left: -160px;
     margin-top: -110px;
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
 }
 
 .flower-lover{
