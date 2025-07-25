@@ -313,9 +313,17 @@ main > section{
 /* media query for small devices */
 
 @media screen and (max-width: 576px){
-    
+
     .navbar ul li > #home, .others{
         display: none;
+    }
+
+    .lists ul{
+        gap: 0px;
+    }
+
+    #cart{
+        text-align: center;
     }
 
     .banner{
