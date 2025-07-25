@@ -369,53 +369,51 @@ main > section{
 
     /* leatest deals styles */
 
-    .deal-bloom{
-        grid-area: deal-bloom;
-    }
-
-    .deal-ana{
-        grid-area: deal-ana;
-    }
-
-    .deal-zabo{
-        grid-area: deal-zabo;
-    }
-
     .deal-container{
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "deal-bloom"
-        "deal-ana"
-        "deal-zabo"
-        ;
-        justify-items: center;
+        display: flex;
+        flex-direction: column;
         gap: 20px;
     }
-    .deal-bloom{
+
+    .deal-bloom, .deal-ana, .deal-zabo{
+        max-width: 100%;
         width: 100%;
-    }
-    .deal-ana{
-        width: 100%;
+        height: 220px;
+        border-radius: 14px;
     }
 
     .deal-zabo{
-        width: 367px;
-        height: 201px;
-        grid-row: auto;
+        order: 3;
         grid-column: auto;
+        grid-row: auto;
+    }
+
+    .deal-ana{
+        order: 2;
+    }
+
+    .deal-bloom{
+        order: 1;
+    }
+
+    .deal-zabo-content, .deal-bloom-content, .deal-ana-content{
+        max-width: 90%;
     }
 
     .deal-zabo-content h3{
-        font-size: 1.275rem;
+        font-size: 1.25rem;
     }
 
     .deal-zabo-content a{
         font-size: 1rem;
     }
 
-    .deal-ana-content{
-        margin-left: 0px;
-        margin-right: 0px;
+    .deal-bloom-content h3, .deal-ana-content h3{
+        font-size: 1.25rem;
+    }
+
+    .deal-bloom-content a, .deal-ana-content a{
+        font-size: 1rem;
     }
 
 }
